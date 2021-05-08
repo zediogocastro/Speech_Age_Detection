@@ -89,7 +89,7 @@ def run_nn(train_files, devel_files, test_files, feature_set):
 	model = model.to(device)
 
 	# get an optimizer
-	oprimizer = "sgd"
+	optimizer = "sgd"
 	optims = {"adam": torch.optim.Adam, "sgd": torch.optim.SGD}
 	optim_cls = optims[optimizer]
 	optimizer = optim_cls(
